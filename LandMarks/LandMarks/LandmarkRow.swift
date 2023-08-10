@@ -18,6 +18,7 @@ struct LandmarkRow: View {
                 .frame(width: 50, height: 50)
                 .cornerRadius(5)
             Text(landmark.name)
+                .font(.subheadline)
 
 
             Spacer()

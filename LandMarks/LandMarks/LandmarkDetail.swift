@@ -27,7 +27,7 @@ struct LandmarkDetail: View {
 
             CircleImage(image: landmark.image)
                 .offset(y: -130)
-                .padding(.bottom, -130)
+                .padding(.bottom, -100)
 
 
             VStack(alignment: .leading) {
@@ -44,15 +44,18 @@ struct LandmarkDetail: View {
                     Text(landmark.state)
                 }
                 .font(.subheadline)
-                .foregroundColor(.secondary)
+                .foregroundColor(.orange)
 
 
                 Divider()
 
 
-                Text("About \(landmark.name)")
+                Text("About \(landmark.name):")
                     .font(.title2)
+                    Spacer()
                 Text(landmark.description)
+                    .font(.body)
+                    .foregroundColor(.gray)
             }
             .padding()
         }

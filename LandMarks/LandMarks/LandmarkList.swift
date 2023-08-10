@@ -35,7 +35,8 @@ struct LandmarkList: View {
                     }
                 }
             }
-            .navigationTitle("Landmarks")
+            .navigationTitle("Parques do Brasil")
+           
         }
     }
 }
